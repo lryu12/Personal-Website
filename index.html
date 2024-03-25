@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Ryu</title>
+    <!-- External CSS stylesheets, internal styles, or CSS links can be added here -->
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src="Squidward.png" class="logo">
+            <ul>
+                <li><a href= "#">Home</a></li>
+                <li><a href= "#">About</a></li>
+                <li><a href= "#">Services</a></li>
+                <li><a href= "#">Portfolio</a></li>
+                <li><a href= "#">Contact</a></li>
+
+            </ul>
+        </nav> 
+        <div class="header-text">
+            <p> Software Developer</p>
+            <h1>Hi, I'm <span>Louis Ryu</span>!</h1>
+        </div>
+    </div>
+</div>
+
+<!-- /* ---------------- about me */ -->
+
+
+<div id="about">
+    <div id="container">
+        <div class="row">
+            <div class="about-col-1">
+                
+                    <img src = "images/portrait.jpg">
+                
+            </div>
+
+            <div class="about-col-2">
+                <h1 class = "sub-title">
+                    About Me
+                </h1>
+                <p>
+                    Hi I'ma  software engineer that Hi I'ma  
+                    software engineer that Hi I'ma  software engineer that 
+                    Hi I'ma  software engineer that Hi I'ma  software engineer that Hi I'ma  
+                    software engineer that Hi I'ma  software engineer that 
+                    Hi I'ma  software engineer that Hi I'ma  software engineer that Hi I'ma  
+                    software engineer that Hi I'ma  software engineer that 
+                    Hi I'ma  software engineer that Hi I'ma  software engineer that Hi I'ma  
+                    software engineer that Hi I'ma  software engineer that 
+                    Hi I'ma  software engineer that Hi I'ma  software engineer that Hi I'ma  
+                    software engineer that Hi I'ma  software engineer that 
+                    Hi I'ma  software engineer that 
+                </p>
+
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('Hackathons')">Hackathons</p>
+                    <p class = "tab-links" onclick="opentab('Bruh')">Bruh</p>
+                </div>
+                <div class="tab-contents active-tab" id = "Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "Hackathons">
+                    <ul>
+                        <li><span>nwHacks Hackathon</span><br>Designing Web/App interfaces</li>
+                        <li><span>AWS Hackathon</span><br>Web App Development</li>
+                        <li><span>Upcoming</span><br>Building Android/iOS Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "Bruh">
+                    <ul>
+                        <li><span>Bruh</span><br>Designing Web/App interfaces</li>
+                        <li><span>Bruh</span><br>Web App Development</li>
+                        <li><span>Bruh</span><br>Building Android/iOS Apps</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
